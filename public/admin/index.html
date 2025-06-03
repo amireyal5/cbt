@@ -1,21 +1,22 @@
 <!doctype html>
-<html>
+<html lang="he">
 <head>
   <meta charset="utf-8" />
   <title>ניהול תוכן - CBT</title>
-  <script src="https://unpkg.com/decap-cms@3.6.3/dist/decap-cms.js"></script>
-  <script>
-    window.CMS_MANUAL_INIT = true;
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
+  <!-- האלמנט שאליו Decap CMS מוסיף את הממשק -->
   <div id="nc-root"></div>
 
+  <!-- טעינת הסקריפט של Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@^3.6.3/dist/decap-cms.js"></script>
+
+  <!-- כאן הסקריפט שלך לאתחול Decap CMS -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       CMS.init();
     });
   </script>
 </body>
 </html>
-
