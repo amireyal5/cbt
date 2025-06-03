@@ -1,7 +1,7 @@
 ---
 title: בית    # וודא שאין רווחים מיותרים אחרי "בית" אם זה מפריע.
-authorbox: false
-pager: false
+authorbox: true
+pager: true
 weight: 1
 menu: main
 sidebar: right
