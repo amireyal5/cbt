@@ -1,0 +1,92 @@
+baseURL = "https://amireyal.co.il"
+title = "עמיר אייל | פסיכותרפיה למתבגרים, מבוגרים והדרכת הורים"
+languageCode = "he"
+defaultContentLanguage = "he"
+theme = "cleanwhite"
+hasCJKLanguage = false
+
+[params]
+  rtl = true
+  header_image = "img/home-bg-jeep.jpg"
+  SEOTitle = "עמיר אייל | פסיכותרפיה בגישה רגשית ואינטגרטיבית"
+  description = "עמיר אייל - פסיכותרפיסט מוסמך. טיפול רגשי למתבגרים, מבוגרים והדרכת הורים במרחב תומך ומכיל."
+  keyword = "עמיר אייל, פסיכותרפיה, טיפול רגשי, מתבגרים, הדרכת הורים, גישה אינטגרטיבית"
+  slogan = "מרחב לפגוש את עצמך מחדש"
+  image_404 = "img/404-bg.jpg"
+  title_404 = "העמוד לא נמצא :( "
+  omit_categories = true   # <-- כאן ביטלנו הצגת קטגוריות בתפריט
+  sidebar_about_description = "פסיכותרפיסט מוסמך למתבגרים, מבוגרים והורים"
+  sidebar_avatar = "img/amir-avatar.png"
+  page_view_counter = false
+  reward = false
+  friends = false
+  bookmarks = false
+  about_me = true
+  disableTaxonomyPages = true
+  featured_tags = true
+  featured_condition_size = 1
+
+  algolia_search = false
+
+[params.social]
+  rss = true
+  email = "amir@amireyal.co.il"
+  phone = "tel:+972547509962"
+  whatsapp = "https://wa.me/972547509962"
+  linkedin = "https://linkedin.com/in/amir-psychotherapy"
+  github = ""
+
+[[params.additional_menus]]
+  title = "אודות"
+  href = "/about/"
+
+[[params.additional_menus]]
+  title = "מאמרים"
+  href = "/posts/"
+
+[[params.additional_menus]]
+  title = "ארכיון"
+  href = "/archive/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[pagination]
+  pagerSize = 5
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 2
+
+  [markup.highlight]
+    style = "dracula"
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+
+  [[menu.main]]
+    name = "בית"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "אודות"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    name = "מאמרים"
+    url = "/posts/"
+    weight = 3
+
+  [[menu.main]]
+    name = "ארכיון"
+    url = "/archive/"
+    weight = 4
