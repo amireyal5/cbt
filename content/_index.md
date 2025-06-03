@@ -1,9 +1,5 @@
 ---
-title: בית
 layout: page
-weight: 1
-menu: main
-
 ---
 
 ## אודותיי
