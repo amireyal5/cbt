@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-github-username/amireyal05
+  repo: amireyal5/cbt
   branch: main
   auth_scope: repo # אפשר לשנות בהתאם להרשאות שלך
 
