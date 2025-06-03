@@ -1,6 +1,6 @@
 ---
 title: בית    # וודא שאין רווחים מיותרים אחרי "בית" אם זה מפריע.
-layout: page
+layout: home
 weight: 1
 menu: main
 sidebar: right
