@@ -1,5 +1,5 @@
 ---
-title: בית    # וודא שאין רווחים מיותרים אחרי "בית" אם זה מפריע.
+title: בית
 layout: page
 weight: 1
 menu: main
