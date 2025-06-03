@@ -4,7 +4,7 @@ authorbox: false
 pager: false
 weight: 1
 menu: main
-sidebar: rught
+sidebar: right
 ---
 
 ## אודותיי
