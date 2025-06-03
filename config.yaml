@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: amireyal/cbt
+  repo: amireyal5/cbt
   branch: main
   site_domain: amireyal05.netlify.app
 
