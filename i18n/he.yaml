@@ -37,7 +37,7 @@ recent_title: "פוסטים אחרונים"
 social_title: "רשתות חברתיות"
 
 # ווידג'ט תגיות
-featured_tags: "תגיות"
+FEATURED TAGS: "תגיות"
 
 # תחתית העמוד
 footer_credits: 'נבנה עם <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> וערכת העיצוב <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a>.'
