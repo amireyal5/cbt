@@ -1,19 +1,18 @@
 backend:
   name: github
-  repo: amireyal5/cbt
+  repo: amireyal/cbt
   branch: main
-  auth_scope: repo # אפשר לשנות בהתאם להרשאות שלך
+  site_domain: amireyal05.netlify.app
 
-media_folder: "static/media"  # התיקייה לשמירת מדיה (תמונות, וידאו)
-public_folder: "/media"       # הנתיב שמוביל למדיה בדפדפן
+media_folder: "static/images/uploads"       # כאן הקבצים יישמרו בגיטהאב
+public_folder: "/images/uploads"            # וכך הם ייחשפו באתר
 
 collections:
-  - name: "posts"             # שם פנימי של האוסף
-    label: "Posts"            # איך זה יופיע בממשק
-    folder: "content/posts"   # התיקייה בקוד שבה נשמרים הקבצים
-    create: true              # אפשרות ליצור פוסטים חדשים דרך הממשק
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # שם הקובץ שייווצר
-    fields:                   # שדות של כל פוסט
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "posts"
+    label: "פוסטים"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "כותרת", name: "title", widget: "string" }
+      - { label: "תוכן", name: "body", widget: "markdown" }
