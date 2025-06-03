@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: your-github-username/your-repo-name
-  branch: main # או master, לפי איך שהמאגר שלך נקרא
+  repo: your-github-username/amireyal05
+  branch: main
   auth_scope: repo # אפשר לשנות בהתאם להרשאות שלך
 
 media_folder: "static/media"  # התיקייה לשמירת מדיה (תמונות, וידאו)
