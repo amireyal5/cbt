@@ -92,27 +92,25 @@
         </div>
 
         
+        
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    
-                    <li><a href="/">בית</a></li>
-
-                    
-
-                    
-                    
-                        <li><a href="/about/">אודות</a></li>
-                    
-                        <li><a href="/posts/">מאמרים</a></li>
-                    
-                        <li><a href="/archive/">ארכיון</a></li>
-                    
-
-                    
                     <li>
-                        <a href="/search"><i class="fa fa-search"></i></a>
+                        <a href="/">All Posts</a>
                     </li>
+                    
+                    
+		    
+                        <li><a href="/about//">אודות</a></li>
+                    
+                        <li><a href="/posts//">מאמרים</a></li>
+                    
+                        <li><a href="/archive//">ארכיון</a></li>
+                    
+		            <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		           </li>
                 </ul>
             </div>
         </div>
@@ -120,27 +118,33 @@
     </div>
     
 </nav>
-
 <script>
+    
+    
+    
+    var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
-    $toggle.addEventListener('click', function(){
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
         if ($navbar.className.indexOf('in') > 0) {
-            
+        
             $navbar.className = " ";
-            setTimeout(function(){
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px";
-                }
-            }, 400);
-        } else {
             
-            $collapse.style.height = "auto";
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
             $navbar.className += " in";
         }
-    });
+    }
 </script>
 
 
@@ -238,6 +242,7 @@
 
        	</div>
         
+
 <div class="
     col-lg-3 col-lg-offset-0
     col-md-3 col-md-offset-0
@@ -246,8 +251,9 @@
     sidebar-container
 ">
     
-    
+	
     <section class="visible-md visible-lg">
+	
         <div class="short-about">
             
             <a href="/about">
@@ -271,25 +277,7 @@
                
                
                
-<li>
-  <a href="tel:tel:&#43;972547509962">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-
-
-<li>
-  <a href="https://wa.me/https%3A%2F%2Fwa.me%2F972547509962" target="_blank" rel="noopener">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-
+               
                
                
                
@@ -307,20 +295,18 @@
                
                
                
+            
+            
                
                
                
                
-               
-               
-           </ul>
-        </div>
+                </ul>
+            </div>
     </section>
+	
     
-
     
-    
-
     
     
     <section>
@@ -329,129 +315,127 @@
         <div class="tags">
             
             
-                
+               
             
-                
+               
             
-                
+               
             
-                
+               
                     <a href="/tags/cbt" title="cbt">
                         cbt
                     </a>
-                
+               
             
-                
+               
             
-                
+               
                     <a href="/tags/development" title="development">
                         development
                     </a>
-                
+               
             
-                
+               
                     <a href="/tags/docker" title="docker">
                         docker
                     </a>
-                
+               
             
-                
+               
                     <a href="/tags/go" title="go">
                         go
                     </a>
-                
+               
             
-                
+               
                     <a href="/tags/golang" title="golang">
                         golang
                     </a>
-                
+               
             
-                
+               
             
-                
+               
             
-                
+               
             
-                
+               
                     <a href="/tags/istio" title="istio">
                         istio
                     </a>
-                
+               
             
-                
+               
             
-                
+               
                     <a href="/tags/kubernetes" title="kubernetes">
                         kubernetes
                     </a>
-                
+               
             
-                
+               
                     <a href="/tags/microservice" title="microservice">
                         microservice
                     </a>
-                
+               
             
-                
+               
             
-                
+               
                     <a href="/tags/security" title="security">
                         security
                     </a>
-                
+               
             
-                
+               
                     <a href="/tags/service-mesh" title="service mesh">
                         service mesh
                     </a>
-                
+               
             
-                
+               
             
-                
+               
             
-                
+               
                     <a href="/tags/tips" title="tips">
                         tips
                     </a>
-                
+               
             
-                
+               
             
-                
+               
             
-                
+               
             
-                
+               
             
-                
+               
                     <a href="/tags/%D7%94%D7%95%D7%A8%D7%94" title="הורה">
                         הורה
                     </a>
-                
+               
             
-                
+               
             
-                
+               
             
-                
+               
                     <a href="/tags/%D7%97%D7%A8%D7%93%D7%94-%D7%97%D7%91%D7%A8%D7%AA%D7%99%D7%AA" title="חרדה חברתית">
                         חרדה חברתית
                     </a>
-                
+               
             
-                
+               
             
-                
+               
             
         </div>
     </section>
     
 
     
-    
-
     
     
 </div>

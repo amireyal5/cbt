@@ -67,7 +67,7 @@ body{
     overflow-x:hidden;
     direction: rtl; /* Added for RTL support */
     text-align: right; /* Added for RTL support */
-}
+} 
 p{
     margin:30px 0
 }
@@ -263,9 +263,9 @@ pre code{
 }
 .navbar-custom .nav li a{
     text-transform:uppercase;
-    font-size:12px;
+    font: size 16px;px;
     line-height:20px;
-    font-weight:800;
+    font-weight:500;
     letter-spacing:1px
 }
 .navbar-custom .nav li a:active{
