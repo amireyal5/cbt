@@ -7,7 +7,7 @@ hasCJKLanguage = false
 
 [params]
   rtl = true
-  header_image = "img/home-bg-jeep.jpg"
+  header_image = "img/hero.jpg"
   SEOTitle = "עמיר אייל | פסיכותרפיה בגישה רגשית ואינטגרטיבית"
   description = "עמיר אייל - פסיכותרפיסט מוסמך. טיפול רגשי למתבגרים, מבוגרים והדרכת הורים במרחב תומך ומכיל."
   keyword = "עמיר אייל, פסיכותרפיה, טיפול רגשי, מתבגרים, הדרכת הורים, גישה אינטגרטיבית"
