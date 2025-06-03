@@ -6,17 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  <!-- האלמנט שאליו Decap CMS מוסיף את הממשק -->
   <div id="nc-root"></div>
 
-  <!-- טעינת הסקריפט של Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.6.3/dist/decap-cms.js"></script>
-
-  <!-- כאן הסקריפט שלך לאתחול Decap CMS -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      CMS.init();
-    });
-  </script>
+  <script src="https://unpkg.com/decap-cms@3.6.1/dist/decap-cms.js"></script>
 </body>
-</html>
+</html> 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/"; // לאחר התחברות - הפניה לדף הבית
+        });
+      }
+    });
+    window.netlifyIdentity.init();
+  }
+</script>
