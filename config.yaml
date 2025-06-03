@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: your-github-username/your-repo-name
+  branch: main # או master, לפי איך שהמאגר שלך נקרא
+  auth_scope: repo # אפשר לשנות בהתאם להרשאות שלך
+
+media_folder: "static/media"  # התיקייה לשמירת מדיה (תמונות, וידאו)
+public_folder: "/media"       # הנתיב שמוביל למדיה בדפדפן
+
+collections:
+  - name: "posts"             # שם פנימי של האוסף
+    label: "Posts"            # איך זה יופיע בממשק
+    folder: "content/posts"   # התיקייה בקוד שבה נשמרים הקבצים
+    create: true              # אפשרות ליצור פוסטים חדשים דרך הממשק
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"  # שם הקובץ שייווצר
+    fields:                   # שדות של כל פוסט
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
