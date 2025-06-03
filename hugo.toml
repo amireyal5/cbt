@@ -47,7 +47,11 @@ hasCJKLanguage = false
 [[params.additional_menus]]
   title = "ארכיון"
   href = "/archive/"
-
+  
+[[params.additional_menus]]
+  title = "בית"
+  href = "/home/"
+  
 [taxonomies]
   category = "categories"
   tag = "tags"
