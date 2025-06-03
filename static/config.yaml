@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: amireyal5/cbt
+  branch: main
+  site_domain: amireyal05.netlify.app
+
+media_folder: "static/images/uploads"       # כאן הקבצים יישמרו בגיטהאב
+public_folder: "/images/uploads"            # וכך הם ייחשפו באתר
+
+collections:
+  - name: "posts"
+    label: "פוסטים"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "כותרת", name: "title", widget: "string" }
+      - { label: "תוכן", name: "body", widget: "markdown" }
