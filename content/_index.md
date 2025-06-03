@@ -1,11 +1,10 @@
 ---
 title: בית    # וודא שאין רווחים מיותרים אחרי "בית" אם זה מפריע.
 authorbox: false
-sidebar: false
 pager: false
 weight: 1
 menu: main
-sidebar: left
+sidebar: rught
 ---
 
 ## אודותיי
